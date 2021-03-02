@@ -1,4 +1,5 @@
-FROM gcr.io/distroless/static:nonroot
+#FROM gcr.io/distroless/static:nonroot
+FROM scratch 
 
 ARG BIN_PATH
 EXPOSE 8080/tcp
