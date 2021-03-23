@@ -29,7 +29,7 @@ apt install docker.io
 
 
 export GOPROXY="https://goproxy.io"
-
+cd /mnt
 tar xf dapr-dashbard-0.6.0.tar.gz
 cd dashbard-0.6.0
 make
@@ -43,6 +43,7 @@ make
 
 ## 在宿主机
 ```
+cd /home/vm/work/dapr-dashbard
 make docker-build DAPR_REGISTRY=0.6.0 DAPR_TAG=amd64
 fatal: not a git repository (or any of the parent directories): .git
 Building 1.0.0/dashboard:amd64 docker image ...
